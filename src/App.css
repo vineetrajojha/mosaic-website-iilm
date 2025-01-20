@@ -1,0 +1,1043 @@
+/* ----------- local fonts ----------- */
+
+@font-face {
+  font-family: 'Alike Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Alike Regular'), url('./fonts/Alike-Regular.woff') format('woff');
+  }
+
+
+@font-face {
+    font-family: 'Georgia Pro Cond';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Pro Cond'), url('./fonts/GeorgiaPro-CondRegular.woff') format('woff');
+    }
+
+/* ----------- local fonts end here ----------- */
+
+body {
+      margin: 0;
+      background-size:contain;
+      overflow-x: hidden;
+      background-color: #000000;
+      background-image: url('/src/images/mosaic-background.jpeg');
+      background-repeat:repeat; 
+  
+    }  
+    
+    
+    
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----------- hero section starts here ----------- */
+
+
+.hero {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #f0f0f0; 
+  position: relative;
+}
+
+.hero-logo {
+  max-width: 80%; 
+  height: auto; 
+  animation: smooth-glow3 2s infinite;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+  position: relative; 
+  top: -150px; 
+  left: 0; 
+}
+
+/* ----------- nav bar ----------- */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  padding: 0px 0px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin: 0px auto;
+  transition: background-color 0.3s, transform 0.3s;
+  background-blend-mode: overlay;
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+.nav-links {
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.mobile__nav{
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 60px);
+    display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  transition: top 0.3s ease-in-out;
+  top: 70px;
+  backdrop-filter: blur(8px);
+}
+.mobile__nav ul{
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.mobile__nav li{
+  list-style: none;
+  
+}
+.mobile__nav li a{
+  list-style: none;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.nav-links li .action__button{
+  background-image: linear-gradient(75deg, #00e0ff, #7000ff 48%, #ff6868);
+    border-style: none;
+    margin-top: 0;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 50px;
+    min-width: 100px;
+}
+.nav_button_li{
+  display: none;
+}
+
+.nav__button{
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a, .mobile__nav a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.nav-links a:hover, .mobile__nav a:hover {
+  transform: scale(1.2);
+  color: coral;
+}
+
+.auth-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.auth-links a:hover {
+  transform: scale(1.2);
+  color: coral;
+} 
+
+/* ----------- nav bar ends here ----------- */
+
+.hero-section {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ----------- glowing effect logo ----------- */
+
+@keyframes smooth-glow {
+  0% {
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgb(85, 81, 109);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px rgb(85, 81, 109);
+  }
+  100% {
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* ----------- h1, h2 customization ----------- */
+
+.hero-content h1 {
+  font-family: 'Georgia Pro Cond';
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 15em; 
+  animation: smooth-glow 5s infinite;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.hero-content h2 {
+  font-family: 'Georgia Pro Cond';
+  color: rgb(255, 255, 255);
+  margin-top: -100px;
+  font-size: 2.6em;
+  text-align: center;
+}
+
+/* ----------- countdown timer ----------- */
+
+#countdown-timer {
+  font-family: 'Alike Regular';
+  font-size: 5em;
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(178, 169, 231);
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 20px;
+  animation: smooth-glow 1s infinite;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+  
+  /* ----------- to add any background image ----------- */
+  background-image: url('');
+  background-size: contain;        
+  background-position: center;    
+  background-repeat: repeat;   
+}
+
+/* ----------- countdown ends here ----------- */
+
+/* ----------- register button ----------- */
+
+.hero-content .btn {
+  font-family: 'Georgia Pro Cond';
+  margin-top: 30px;
+  padding: 20px 30px;
+  font-size: 2em;
+  background-image: linear-gradient(75deg, #00e0ff, #7000ff 48%, #ff6868);
+  color: white;
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+
+.hero-content .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* ----------- register button ends here ----------- */
+
+/* ----------- image rotator (removed now) ----------- 
+
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-image {
+  position: absolute;
+  top: -310px;
+  right: -220px;
+  width: 500px;
+  height: 500px;
+  animation: rotateImage 300s linear infinite;
+  border-radius: 50%;
+  z-index: 9999; 
+  pointer-events: none; 
+} 
+
+
+.rotating-image2{
+  position: absolute;
+  bottom: -1100px;
+  right: -130px;
+  width: 300px;
+  height: 300px;
+  animation: rotateImage 300s linear infinite;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.rotating-image.bottom-left {
+  position: absolute;
+  top: auto;
+  width: 500px;
+  height: 500px;
+  bottom: -300px;
+  right: auto;
+  left: -190px;
+  animation: rotateImage 300s linear infinite;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.rotating-image.bottom-left2 {
+  top: auto;
+  width:220px;
+  height: 250px;
+  bottom: -1670px;
+  right: auto;
+  left: -70px;
+  animation: rotateImage 300s linear infinite;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+ ----------- image rotator ends here ----------- */
+
+
+ /* ----------- event details ----------- */
+
+
+.event-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+
+/* ----------- h1, h2, p customization ----------- */
+
+.event-section h1, h2{
+  font-family: 'Georgia Pro Cond';
+  font-size: 4em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  animation: smooth-glow 5s infinite;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.event-section p {
+  font-family: 'Alike Regular';
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* ----------- event details behaviour ----------- */
+
+.events-container {
+  display: flex;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto; 
+  position: relative;
+  gap: 20px; 
+  /* ----------- hides scrollbar for firefox, edge ----------- */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+/* ----------- hides scrollbar for chrome, safari ----------- */
+.events-container::-webkit-scrollbar {
+  display: none; 
+}
+
+/* ----------- event cards ----------- */
+
+#events{
+padding-bottom: 100px;
+}
+
+.events-container .event {
+  min-width: 300px;
+  scroll-snap-align: center;
+  width: 33.33%; 
+  flex-shrink: 0; 
+  background-color: rgba(36, 36, 36, 0.8);
+  color: white;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  font-size: larger;
+  border-style: none;
+  background-size: cover;  
+  background-position: center; 
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  border: 3px solid rgb(178, 169, 231);
+}
+
+.events-container .event:hover {
+  transform: scale(1.10);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.events-container .event .event-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.events-container .event:hover .event-details {
+  opacity: 1;
+}
+
+.events-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden; 
+}
+
+/* ----------- register buttons ----------- */
+
+.btn1 {
+  
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  background-color: #591617;
+  border: 2px solid #591617;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn1:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+/* ----------- event details ends here ----------- */
+
+/* ----------- about section for desktop ----------- */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ----------- h2, p, p2 ----------- */
+
+.about-section h2 {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  animation: smooth-glow 5s infinite;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.about-section p {
+  font-family: 'Alike Regular';
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.about-section #p2 {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+/* ----------- about section for mobile ----------- */
+
+.about-section1 {
+  display: flex;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 300;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  padding-bottom: 30px;
+}
+
+/* ----------- h2, p, p2 ----------- */
+
+.about-section1 h2 {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  animation: smooth-glow 5s infinite;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.about-section1 p {
+  font-family: 'Alike Regular';
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.about-section1 #p2 {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+/* ----------- about section ends here ----------- */
+
+/* ----------- media query mobile ----------- */
+
+@media screen and (max-width: 650px) {
+  nav {
+    font-size: 1rem;
+    width: 100%;
+    
+  }
+}
+@media screen and (max-width: 767px) {
+.mobile__nav{
+  display: flex;
+}
+}
+@media screen and (max-width: 767px) {
+  nav {
+    font-size: 1rem;
+    width: 100%;
+    justify-content: right;
+    height: 70px;
+  }
+  .nav-links li{
+    display: none;
+  }
+  .nav_button_li{
+    display: block !important;
+  }
+  .action__button__li{
+    display: block !important;
+  }
+
+  .hero-content h1 {
+    font-family: 'Georgia Pro Cond';
+    font-size: 5em;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8em;
+  }
+
+  #countdown-timer {
+    font-size: 3.5em;
+  }
+
+  .rotating-image,
+  .rotating-image2,
+  .rotating-image.bottom-left,
+  .rotating-image.bottom-left2 {
+    display: none;
+  }
+
+  .event {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+  }
+
+  
+
+
+  .arrow-btn {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .about-section h2 {
+    font-size: 3.5rem;
+  }
+
+  .about-section p {
+    font-family: 'Alike Regular';
+    font-size: 1.2rem;
+  }
+}
+
+/* ----------- media query tablet ----------- */
+
+@media screen and (max-width: 1023px) {
+
+.rotating-image,
+  .rotating-image2,
+  .rotating-image.bottom-left,
+  .rotating-image.bottom-left2 {
+    display: none;
+  }
+  .hero-content h1 {
+    font-family: 'Georgia Pro Cond';
+    font-size: 7em;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2em;
+  }
+
+  .event {
+    width: 45%;
+  }
+
+  .events-container {
+    gap: 15px;
+  }
+
+  .about-section h2 {
+    font-size: 4.5rem;
+  }
+
+  .about-section p {
+    font-family: 'Alike Regular';
+    font-size: 1.2rem;
+  }
+}
+
+/* ----------- media query desktop devices ----------- */
+
+@media screen and (min-width: 1024px) {
+  nav {
+    font-size: 1rem;
+  }
+
+  .hero-content h1 {
+    font-family: 'Georgia Pro Cond';
+    font-size: 9em;
+  }
+
+  .hero-content h2 {
+    font-size: 2.6em;
+  }
+
+  .event {
+    width: 30%;
+    height: 300px;
+  }
+
+  .about-section h2 {
+    font-size: 5rem;
+  }
+
+  .about-section p {
+    font-family: 'Alike Regular';
+    font-size: 1.3rem;
+  }
+}
+
+.a1 {
+  color: yellow;
+  text-decoration: none; 
+}
+
+.a1:hover {
+  color: lightgray; 
+}
+
+/* ----------- gallery section ----------- */
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: 120px; 
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  flex-grow: 1;
+}
+
+/* ----------- photo style with varying sizes ----------- */
+
+.photo {
+  border-radius: 10px;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.photo.small {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-image: url('images/m2.png'); 
+}
+.photo.small2 {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-image: url('images/m5.png'); 
+}
+.photo.medium {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-image: url('images/m10.gif'); 
+}
+
+.photo.large {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-image: url('images/m4.png'); 
+}
+
+.photo.tall {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-image: url('images/m6.png'); 
+}
+
+.photo.wide {
+  grid-column: span 2;
+  grid-row: span 4;
+  background-image: url('images/m7.png'); 
+}
+
+.photo.wide2 {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-image: url('images/m3.png'); 
+}
+
+/* ----------- mobile view adjustments ----------- */
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 150px; 
+  }
+
+
+  .gallery-grid .photo:nth-child(n+5) {
+    display: none;
+  }
+
+
+  .photo.small {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/m2.png');
+  }
+
+  .photo.medium {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url('images/m10.gif'); 
+  }
+
+  .photo.large {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url('images/m5.png'); 
+  }
+
+  .photo.tall {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/m4.png'); 
+  }
+
+  .photo.wide {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/mosaic.png'); 
+  }
+
+  .photo.wide2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/mosaic.png'); 
+  }
+}
+
+/* ----------- media query very small devices ( portrait mode ) ----------- */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; 
+    grid-auto-rows: 200px; 
+  }
+
+ 
+  .gallery-grid .photo:nth-child(n+5) {
+    display: none;
+  }
+
+ 
+  .photo {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/* ----------- gallery section ends here  ----------- */
+
+/* ----------- footer starts here ----------- */
+
+/* ----------- contact us ----------- */
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+
+.footer-section h2 {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  animation: smooth-glow 5s infinite;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.footer-section p {
+  font-family: 'Alike Regular';
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.footer-section #p2 {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+/* ----------- follow us ----------- */
+
+.footer-section .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.footer-section .social-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.footer-section .social-links a:hover {
+  color: #c4faf6;
+}
+
+.footer-section .social-links img {
+  width: 40px;
+  height: 40px;
+  padding-right: 5px;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-section .social-links img:hover {
+  transform: scale(1.2);
+}
+
+.footer-section .social-links span {
+  font-size: 2rem;
+}
+
+/* ----------- location and google map ----------- */
+
+.footer-section .footer-right {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer-section .footer-right h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.footer-section .footer-right p {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.footer-section .footer-right .location-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.footer-section .footer-right .location-link img {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-section .footer-right .location-link:hover img {
+  transform: scale(1.2);
+}
+
+/* ----------- media query mobile ----------- */ 
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .footer-section h2 {
+    font-size: 3rem;
+  }
+
+  .footer-section p {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .footer-section #p2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-section .social-links {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; 
+    justify-content: center; 
+    gap: 0.5rem;
+  }
+  
+
+  .footer-section .social-links a {
+    font-size: 1rem;
+  }
+
+  .footer-section .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-section .social-links span {
+    font-size: 1.5rem;
+  }
+
+  .footer-section .footer-right h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-section .footer-right p {
+    font-size: 1.2rem;
+  }
+
+  .footer-section .footer-right .location-link {
+    font-size: 1rem;
+  }
+
+  .footer-section .footer-right .location-link img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ----------- footer section ends here ----------- */

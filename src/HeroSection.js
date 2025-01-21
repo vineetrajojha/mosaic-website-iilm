@@ -15,7 +15,7 @@ const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date("February 28, 2025 00:00:00").getTime();
+    const eventDate = new Date("February 27, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const distance = eventDate - now;
 
@@ -71,7 +71,7 @@ const HeroSection = () => {
         <div className="image-section">
           <div className="hero-content">
             <img src="mosaic.png" alt="Logo" className="hero-logo" />
-            <h2 id="dates">30th January, 31st January & 1st February 2025</h2>
+            <h2 id="dates">27th February & 28th February </h2>
             <div id="countdown-timer">
               {timeLeft ? (
                 <>

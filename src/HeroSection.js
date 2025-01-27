@@ -100,7 +100,7 @@ const HeroSection = () => {
           // ------------ mobile view content ------------
           <>
             <p>
-              <strong>MOSAIC 2025</strong> – IILM University's three-day cultural extravaganza is here! 🎉 Join us on <strong>30th, 31st January, and 1st February</strong> for an unforgettable celebration of <strong>talent, creativity, and innovation</strong>.
+              <strong>MOSAIC 2025</strong> – IILM University's three-day cultural extravaganza is here.  Join us on <strong>30th, 31st January, and 1st February</strong> for an unforgettable celebration of <strong>talent, creativity, and innovation</strong>.
               </p>
 
             <p>
@@ -108,7 +108,7 @@ const HeroSection = () => {
               <br/>
               This year, we’re raising the bar, bringing together participants and enthusiasts from across the country.
               <br/>
-              Don’t miss the magic of <strong>MOSAIC 2025</strong> – where creativity and camaraderie shine! ✨</p>
+              Don’t miss the magic of <strong>MOSAIC 2025</strong> – where creativity and camaraderie shine</p>
           </>
         ) : (
           // ------------ desktop view content ------------
@@ -116,10 +116,10 @@ const HeroSection = () => {
             <p>Brace yourselves for <strong>MOSAIC 2025</strong> – IILM University's grand three-day cultural extravaganza, happening on <strong>30th, 31st January, and 1st February</strong>!<br />
             Known as one of the most awaited events of the year, Mosaic is where <strong>talent meets creativity</strong>, and the <strong>spirit of youth</strong> shines bright.</p>
 
-            <p>With a rich legacy of over a decade, Mosaic continues to be a vibrant platform that celebrates <strong>art, culture, and innovation</strong> through a series of exhilarating inter-college competitions and performances. From <strong>electrifying music</strong> and <strong>mesmerizing dance battles</strong> to <strong>thought-provoking drama</strong> and <strong>stunning artistic showcases</strong>, there’s something for everyone to enjoy and be inspired by.</p>
+            <p>With a rich legacy of over a decade, Mosaic continues to be a vibrant platform that celebrates <strong>art, culture, and innovation</strong> through a series of <br /> 
+            exhilarating inter-college competitions and performances. From <strong>electrifying music</strong> and <strong>mesmerizing dance battles</strong> to <strong>thought-provoking drama</strong> and<br /> <strong>stunning artistic showcases</strong>, there’s something for everyone to enjoy and be inspired by.</p>
 
             <p>Every year, Mosaic attracts <strong>5000+ students and visitors daily</strong>, creating an atmosphere of infectious energy and unforgettable memories.</p>
-
             <p>In <strong>2025</strong>, we’re set to raise the bar even higher, bringing together a diverse mix of participants, professionals, and cultural enthusiasts from across the country.</p>
 
             <p>Don’t miss <strong>MOSAIC 2025</strong> – a three-day celebration of <strong>talent, creativity, and camaraderie</strong> that promises to leave you inspired and energized. Let’s create magic together!</p>
@@ -169,7 +169,7 @@ const HeroSection = () => {
 </p>
 
     <br/>
-    <h2>Follow Us On</h2>
+    <h2>Follow Us</h2>
     <div className="social-links">
     <a href="https://instagram.com/aaghaz_iilm/" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span> <p>Aaghaaz IILM</p></span>
@@ -177,24 +177,19 @@ const HeroSection = () => {
   <a href="https://www.instagram.com/mosaic.annualfest/" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span><p>Mosaic Annual Fest</p></span>
   </a>
-  <a href="https://www.instagram.com/mosaic.annualfest/" target="_blank" rel="noopener noreferrer">
-    <img src="unstop.png" alt="" /> <span><p>Unstop</p></span>
-  </a>
   
 </div>
   </div>
 
   <div className="footer-right">
     <p>IILM University</p>
-    <p>Greater Noida, Knowledge Park</p>
+    <p>Greater Noida,  Knowledge Park II</p>
     <a 
       href="https://www.google.com/maps/place/IILM+University,+Greater+Noida/" 
       target="_blank" 
       rel="noopener noreferrer" 
       className="location-link"
-    >
-      <img src="m11.png" alt="" />
-      View on Google Maps
+    > 
     </a>
   </div>
 </div>

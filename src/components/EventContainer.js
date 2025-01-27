@@ -10,14 +10,7 @@ const EventContainer = ({ heading, dataArray }) => {
           {dataArray.map((event, index) => (
             <Card
               key={index}
-              backgroundImage={event.backgroundImage}
-              buttonText={event.buttonText}
-              time={event.time}
-              date={event.date}
-              index={index}
-              title={event.title}
-              venue={event.venue}
-            />
+              backgroundImage={event.backgroundImage} />
           ))}
         </div>
       </div>

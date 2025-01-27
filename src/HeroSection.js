@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import  EventContainer  from './components/EventContainer';
-import { EVENTS } from './config/constants';
+import { MusicEvents, 
+  ArtEvents, 
+  DanceEvents, 
+  DramaEvents, 
+  FashionEvents, 
+  LiteraryEvents, 
+  MultimediaEvents  } from './config/constants';
 
 // ------------ countdown timer starts here ------------
 const HeroSection = () => {
@@ -71,7 +77,7 @@ const HeroSection = () => {
         <div className="image-section">
           <div className="hero-content">
             <img src="mosaic.png" alt="Logo" className="hero-logo" />
-            <h2 id="dates">27th February & 28th February </h2>
+            <h2 id="dates">27th February & 28th February</h2>
             <div id="countdown-timer">
               {timeLeft ? (
                 <>
@@ -122,13 +128,14 @@ const HeroSection = () => {
       </section>
 
 
-<EventContainer heading={"Event Details"} dataArray={EVENTS} />
-<EventContainer heading={"Singing Events"} dataArray={EVENTS} />
-<EventContainer heading={"Theatre Events"} dataArray={EVENTS} />
-<EventContainer heading={"Academics Events"} dataArray={EVENTS} />
-<EventContainer heading={"Art and crafts Events"} dataArray={EVENTS} />
-<EventContainer heading={"Fashion Events"} dataArray={EVENTS} />
-<EventContainer heading={"Multimedia Events"} dataArray={EVENTS} />
+
+<EventContainer heading={"Music Events"} dataArray={MusicEvents} />
+<EventContainer heading={"Art Events"} dataArray={ArtEvents} />
+<EventContainer heading={"Dance Events"} dataArray={DanceEvents} />
+<EventContainer heading={"Drama Events"} dataArray={DramaEvents} />
+<EventContainer heading={"Fashion Events"} dataArray={FashionEvents} />
+<EventContainer heading={"Literary Events"} dataArray={LiteraryEvents} />
+<EventContainer heading={"Multimedia Events"} dataArray={MultimediaEvents} />
 
       {/* Gallery Section */}
       <section>

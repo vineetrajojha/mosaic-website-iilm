@@ -5,6 +5,7 @@ const EventContainer = ({ heading, dataArray }) => {
   return (
     <section id="events" className="events-section">
       <h2>{heading}</h2>
+      <a href="www.instagram.com"></a>
       <div className="events-slider">
         <div className="events-container">
           {dataArray.map((event, index) => (

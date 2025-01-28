@@ -130,15 +130,25 @@ nav {
 }
 
 .nav-links li .action__button{
-  background-image: linear-gradient(75deg, #00e0ff, #7000ff 48%, #ff6868);
-    border-style: none;
+  background-image: url("register.png");
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center;
+  cursor: pointer;
+  text-decoration: none;
+  /* Responsive size */
+  width: 150px; 
+  height: 38px; 
+
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
     margin-top: 0;
-    padding: 8px 18px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    border-radius: 50px;
-    min-width: 100px;
+    font-size: 0px;
+    border: 2px;
+    outline: none;
+    border-radius: 100px 100px;
 }
 .nav_button_li{
   display: none;
@@ -164,7 +174,7 @@ nav {
 
 .nav-links a:hover, .mobile__nav a:hover {
   transform: scale(1.2);
-  color: coral;
+  color: rgb(78, 119, 254);
 }
 
 .auth-links a {
@@ -176,7 +186,7 @@ nav {
 
 .auth-links a:hover {
   transform: scale(1.2);
-  color: coral;
+  color: rgb(78, 119, 254);
 } 
 
 /* ----------- nav bar ends here ----------- */
@@ -268,22 +278,31 @@ nav {
 /* ----------- register button ----------- */
 
 .hero-content .btn {
-  font-family: 'Georgia Pro Cond';
   margin-top: 60px;
-  padding: 10px 60px;
-  font-size: 2em;
-  background-image: linear-gradient(75deg, #00e0ff, #7000ff 48%, #ff6868);
-  color: white;
-  border: 2px solid;
-  border-radius: 40px;
+  background-image: url("register.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 8px 20px rgb(0, 0, 0);
+
+  /* Responsive size */
+  width: 300px; /* Adjust base width */
+  height: 80px; /* Adjust base height */
+  font-size: 16px; /* Text size */
+  padding: 10px 20px; /* Add padding for content space */
+
+  /* Center the text/icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .hero-content .btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  
   transform: scale(1.05);
 }
 
@@ -545,8 +564,6 @@ padding-bottom: 100px;
     font-size: 1.2rem;
   }
 
-  
-
 
   .arrow-btn {
     font-size: 1em;
@@ -713,7 +730,7 @@ padding-bottom: 100px;
 
 /* ----------- mobile view adjustments ----------- */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr); 
     grid-auto-rows: 150px; 
@@ -762,22 +779,52 @@ padding-bottom: 100px;
   }
 }
 
-/* ----------- media query very small devices ( portrait mode ) ----------- */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .gallery-grid {
-    grid-template-columns: 1fr; 
-    grid-auto-rows: 200px; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 150px; 
   }
 
- 
+
   .gallery-grid .photo:nth-child(n+5) {
     display: none;
   }
 
- 
-  .photo {
+
+  .photo.small {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/m2.png');
+  }
+
+  .photo.medium {
     grid-column: span 1;
-    grid-row: span 1;
+    grid-row: span 2;
+    background-image: url('images/m10.gif'); 
+  }
+
+  .photo.large {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url('images/m5.png'); 
+  }
+
+  .photo.tall {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/m4.png'); 
+  }
+
+  .photo.wide {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/mosaic.png'); 
+  }
+
+  .photo.wide2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('images/mosaic.png'); 
   }
 }
 

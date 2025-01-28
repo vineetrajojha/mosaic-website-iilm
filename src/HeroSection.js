@@ -21,7 +21,7 @@ const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date("February 27, 2025 00:00:00").getTime();
+    const eventDate = new Date("February 26, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const distance = eventDate - now;
 
@@ -77,7 +77,7 @@ const HeroSection = () => {
         <div className="image-section">
           <div className="hero-content">
             <img src="mosaic.png" alt="Logo" className="hero-logo" />
-            <h2 id="dates">27th February & 28th February</h2>
+            <h2 id="dates">26th February & 27th February 2025</h2>
             <div id="countdown-timer">
               {timeLeft ? (
                 <>
@@ -87,7 +87,7 @@ const HeroSection = () => {
                 "EXPIRED"
               )}
             </div>
-            <a href="#events" className="btn">Register</a>
+            <a href="#events" className="btn"></a>
           </div>
         </div>
       </section>
@@ -100,7 +100,7 @@ const HeroSection = () => {
           // ------------ mobile view content ------------
           <>
             <p>
-              <strong>MOSAIC 2025</strong> – IILM University's three-day cultural extravaganza is here.  Join us on <strong>30th, 31st January, and 1st February</strong> for an unforgettable celebration of <strong>talent, creativity, and innovation</strong>.
+              <strong>MOSAIC 2025</strong> – IILM University's two-day cultural extravaganza is here.  Join us on <strong>26th February and 27th February </strong> for an unforgettable celebration of <strong>talent, creativity, and innovation</strong>.
               </p>
 
             <p>
@@ -113,7 +113,7 @@ const HeroSection = () => {
         ) : (
           // ------------ desktop view content ------------
           <>
-            <p>Brace yourselves for <strong>MOSAIC 2025</strong> – IILM University's grand three-day cultural extravaganza, happening on <strong>30th, 31st January, and 1st February</strong>!<br />
+            <p>Brace yourselves for <strong>MOSAIC 2025</strong> – IILM University's grand three-day cultural extravaganza, happening on <strong>26th February and 27th February 2025</strong>!<br />
             Known as one of the most awaited events of the year, Mosaic is where <strong>talent meets creativity</strong>, and the <strong>spirit of youth</strong> shines bright.</p>
 
             <p>With a rich legacy of over a decade, Mosaic continues to be a vibrant platform that celebrates <strong>art, culture, and innovation</strong> through a series of <br /> 
@@ -161,20 +161,27 @@ const HeroSection = () => {
       If you have any questions, feel free to reach out to us! <br />
       We'll make sure to reach back to you as soon as possible. <br />
     </p>
-    <p style={{ textDecoration: "underline" }}>
+    <a href="mailto:mosaic@iilm.edu"><p style={{ textDecoration: "underline" }}>
   mosaic@iilm.edu
-</p>
-<p style={{ textDecoration: "underline" }}>
-  Zulkar Nain: +91 8082882315,<br/>Nandani: +91 9354486770
-</p>
+</p></a>
+<a 
+      href="https://wa.me/+918082882315" 
+      target="_blank"><p style={{ textDecoration: "underline" }}>
+Zulkar Nain: +91 8082882315,
+</p></a>
+<a 
+      href="https://wa.me/+919354486770" 
+      target="_blank"><p style={{ textDecoration: "underline" }}>
+Nandani: +91 9354486770
+</p></a>
 
     <br/>
     <h2>Follow Us</h2>
     <div className="social-links">
-    <a href="https://instagram.com/aaghaz_iilm/" target="_blank" rel="noopener noreferrer">
+    <a href="https://instagram.com/aaghaz.cultural.society/" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span> <p>Aaghaaz IILM</p></span>
   </a>
-  <a href="https://www.instagram.com/mosaic.annualfest/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/aaghaaz.cultural.society/" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span><p>Mosaic Annual Fest</p></span>
   </a>
   
@@ -182,14 +189,14 @@ const HeroSection = () => {
   </div>
 
   <div className="footer-right">
-    <p>IILM University</p>
-    <p>Greater Noida,  Knowledge Park II</p>
+    <p>IILM University, Greater Noida</p>
+    
     <a 
       href="https://www.google.com/maps/place/IILM+University,+Greater+Noida/" 
       target="_blank" 
       rel="noopener noreferrer" 
       className="location-link"
-    > 
+    > <p>16, Knowledge Park II, Greater Noida, Uttar Pradesh 201306</p>
     </a>
   </div>
 </div>

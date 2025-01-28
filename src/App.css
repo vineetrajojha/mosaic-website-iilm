@@ -137,8 +137,8 @@ nav {
   cursor: pointer;
   text-decoration: none;
   /* Responsive size */
-  width: 150px; 
-  height: 38px; 
+  width: 160px; 
+  height: 40px; 
 
   display: flexbox;
   align-items: center;

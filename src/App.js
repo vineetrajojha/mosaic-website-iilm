@@ -22,7 +22,7 @@ function App() {
 
             <li><a href="#events">Events</a></li>
 
-            <li><a href="#rulebook">Rule Book</a></li>
+            <li><a href="https://drive.google.com/drive/folders/12VS81mrAEXwH8KS43cHKsAC9Q1YYffBE">Rule Book</a></li>
 
             <li><a href="#gallery">Gallery</a></li>
 

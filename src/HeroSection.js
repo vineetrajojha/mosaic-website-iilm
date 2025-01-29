@@ -113,14 +113,13 @@ const HeroSection = () => {
         ) : (
           // ------------ desktop view content ------------
           <>
-            <p>Brace yourselves for <strong>MOSAIC 2025</strong> – IILM University's grand three-day cultural extravaganza, happening on <strong>26th February and 27th February 2025</strong>!<br />
+            <p>Brace yourselves for <strong>MOSAIC 2025</strong> – IILM University's grand three-day cultural extravaganza, happening on <strong>26th February and 27th February 2025</strong>!
             Known as one of the most awaited events of the year, Mosaic is where <strong>talent meets creativity</strong>, and the <strong>spirit of youth</strong> shines bright.</p>
 
-            <p>With a rich legacy of over a decade, Mosaic continues to be a vibrant platform that celebrates <strong>art, culture, and innovation</strong> through a series of <br /> 
-            exhilarating inter-college competitions and performances. From <strong>electrifying music</strong> and <strong>mesmerizing dance battles</strong> to <strong>thought-provoking drama</strong> and<br /> <strong>stunning artistic showcases</strong>, there’s something for everyone to enjoy and be inspired by.</p>
-
-            <p>Every year, Mosaic attracts <strong>5000+ students and visitors daily</strong>, creating an atmosphere of infectious energy and unforgettable memories.</p>
-            <p>In <strong>2025</strong>, we’re set to raise the bar even higher, bringing together a diverse mix of participants, professionals, and cultural enthusiasts from across the country.</p>
+            <p>With a rich legacy of over a decade, Mosaic continues to be a vibrant platform that celebrates <strong>art, culture, and innovation</strong> through a series of  
+            exhilarating inter-college competitions and performances. From <strong>electrifying music</strong> and <strong>mesmerizing dance battles</strong> to <strong>thought-provoking drama</strong> and<strong>stunning artistic showcases</strong>, there’s something for everyone to enjoy and be inspired by.
+            Every year, Mosaic attracts <strong>5000+ students and visitors daily</strong>, creating an atmosphere of infectious energy and unforgettable memories.
+            In <strong>2025</strong>, we’re set to raise the bar even higher, bringing together a diverse mix of participants, professionals, and cultural enthusiasts from across the country.</p>
 
             <p>Don’t miss <strong>MOSAIC 2025</strong> – a three-day celebration of <strong>talent, creativity, and camaraderie</strong> that promises to leave you inspired and energized. Let’s create magic together!</p>
           </>
@@ -179,7 +178,7 @@ Nandani: +91 9354486770
     <h2>Follow Us</h2>
     <div className="social-links">
     <a href="https://instagram.com/aaghaz.cultural.society/" target="_blank" rel="noopener noreferrer">
-    <img src="insta.png" alt="" /> <span> <p>Aaghaaz IILM</p></span>
+    <img src="insta.png" alt="" /> <span> <p>Aaghaaz</p></span>
   </a>
   <a href="https://www.instagram.com/aaghaaz.cultural.society?igsh=Y2FuMnJ3ajFteGtq" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span><p>Mosaic Annual Fest</p></span>

@@ -87,7 +87,7 @@ const HeroSection = () => {
                 "EXPIRED"
               )}
             </div>
-            <a href="#events" className="btn"></a>
+            <a href="https://forms.gle/HGkMqFUbbyHhgLM17" target="_blank" rel="noopener noreferrer" className="btn"></a>
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@ Nandani: +91 9354486770
     <a href="https://instagram.com/aaghaz.cultural.society/" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span> <p>Aaghaaz IILM</p></span>
   </a>
-  <a href="https://www.instagram.com/aaghaaz.cultural.society/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/aaghaaz.cultural.society?igsh=Y2FuMnJ3ajFteGtq" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span><p>Mosaic Annual Fest</p></span>
   </a>
   

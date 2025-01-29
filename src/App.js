@@ -29,9 +29,10 @@ function App() {
             <li><a href="#contact">Contact</a></li>
 
             <li className='action__button__li'>
-              <button className='action__button'>
-                Register
-              </button>
+            <a href="https://forms.gle/HGkMqFUbbyHhgLM17" target="_blank" rel="noopener noreferrer">
+  <button className="action__button">Register</button>
+</a>
+
             </li>
             <li className='nav_button_li'>
               <button className='nav__button' onClick={handleClick}>

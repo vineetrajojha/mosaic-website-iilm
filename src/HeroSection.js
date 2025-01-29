@@ -113,7 +113,7 @@ const HeroSection = () => {
         ) : (
           // ------------ desktop view content ------------
           <>
-            <p>Brace yourselves for <strong>MOSAIC 2025</strong> – IILM University's grand three-day cultural extravaganza, happening on <strong>26th February and 27th February 2025</strong>!
+            <p>Brace yourselves for <strong>MOSAIC 2025</strong> – IILM University's grand two-day cultural extravaganza, happening on <strong>26th February and 27th February 2025</strong>!
             Known as one of the most awaited events of the year, Mosaic is where <strong>talent meets creativity</strong>, and the <strong>spirit of youth</strong> shines bright.</p>
 
             <p>With a rich legacy of over a decade, Mosaic continues to be a vibrant platform that celebrates <strong>art, culture, and innovation</strong> through a series of  
@@ -121,7 +121,7 @@ const HeroSection = () => {
             Every year, Mosaic attracts <strong>5000+ students and visitors daily</strong>, creating an atmosphere of infectious energy and unforgettable memories.
             In <strong>2025</strong>, we’re set to raise the bar even higher, bringing together a diverse mix of participants, professionals, and cultural enthusiasts from across the country.</p>
 
-            <p>Don’t miss <strong>MOSAIC 2025</strong> – a three-day celebration of <strong>talent, creativity, and camaraderie</strong> that promises to leave you inspired and energized. Let’s create magic together!</p>
+            <p>Don’t miss <strong>MOSAIC 2025</strong> – a two-day celebration of <strong>talent, creativity, and camaraderie</strong> that promises to leave you inspired and energized. Let’s create magic together!</p>
           </>
         )}
       </section>

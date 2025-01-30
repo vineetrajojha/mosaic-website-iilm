@@ -171,7 +171,7 @@ Zulkar Nain: +91 8082882315,
 <a 
       href="https://wa.me/+919354486770" 
       target="_blank"><p style={{ textDecoration: "underline" }}>
-Nandani: +91 9354486770
+Nandini Gautam: +91 9354486770
 </p></a>
 
     <br/>

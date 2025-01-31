@@ -177,10 +177,10 @@ Nandini Gautam: +91 9354486770
     <br/>
     <h2>Follow Us</h2>
     <div className="social-links">
-    <a href="https://instagram.com/aaghaz.cultural.society/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/aaghaaz.cultural.society?igsh=Y2FuMnJ3ajFteGtq" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span> <p>Aaghaaz</p></span>
   </a>
-  <a href="https://www.instagram.com/aaghaaz.cultural.society?igsh=Y2FuMnJ3ajFteGtq" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/mosaic.annualfest?igsh=MjVxOHN2a3p4djlj" target="_blank" rel="noopener noreferrer">
     <img src="insta.png" alt="" /> <span><p>Mosaic Annual Fest</p></span>
   </a>
   
